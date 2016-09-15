@@ -1,0 +1,14 @@
+name: ChatLib
+main: org.chatlib.main.ChatLib
+version: 0.0.1
+depend: [Vault, GeneralLib]
+softdepend: [PlaceholderAPI, Jobs]
+commands:
+  test:
+    description: /test
+    usage: /test
+permissions:
+  chatlib.admin:
+    description: Grants access to all chatlib command
+    children:
+      test.admin: true
